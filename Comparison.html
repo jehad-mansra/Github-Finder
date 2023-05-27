@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="Comparison.js" defer></script>
+    <title>Comparison</title>
+    <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+      }
+      </style>
+</head>
+
+
+
+<body>
+    <header class="header">
+        <div class="nav__pages">
+            <a href="#" class="header__logo">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <div>
+                <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                <input type="search" class="header__search" placeholder="Search or jump to..." /><a
+                    href="Comparison.html">
+                    <img src="images/svg.mr-1.png" class="Comparison__icon" /></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__link">
+                    <li>Pull requests</li>
+                    <li>Issues</li>
+                    <li>Codespaces</li>
+                    <li>Marketplace</li>
+                    <li>Explore</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav__icons">
+            <i class="fa-regular fa-bell bell"></i>
+            <div class="plus__icon">
+                <i class="fa-solid fa-plus plus"></i>
+                <i class="fa-solid fa-caret-down arrow"></i>
+            </div>
+            <div class="photo__icon">
+                <img src="jehad.jpg" class="image__nav profile__image" />
+                <i class="fa-solid fa-caret-down arrow"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="card__wrapper container">
+
+        
+        
+
+        <div class="cards">
+            <div class="card card_user1">
+                <div class="result1"></div>
+                <!-- <span class="emoji wave" role="img" aria-label="hand wave">THE WINNER</span> -->
+        
+
+                <img src="https://i.pinimg.com/236x/bf/b2/e9/bfb2e9d4f260800a95812f3bdad53aba.jpg" alt="" class="user1__image">
+                <h2 class="user1__repo">number of repositories</h2>
+                <p class="user1__follw">followers</p>
+                <div> <input
+                        type="search" class="header__search"  id="user1__search" placeholder="Search or jump to..."> </div>
+            </div>
+                    <span class=" tie"></span>
+            <div class="card card_user2">
+                <div class="result2"></div>
+               
+                <img src="https://i.pinimg.com/236x/9f/dd/8f/9fdd8ff262a58cfc71f660792a974c44.jpg" alt="" class="user2__image">
+                <h2 class="user2__repo">number of repositories</h2>
+                <p class="user2__follw">followers</p>
+                <div> <input
+                        type="search" class="header__search" id="user2__search" placeholder="Search or jump to..."> </div>
+            </div>
+
+            
+        </div>
+
+
+        <button class="btn__Compare">Comparison</button>
+
+
+    </div>
+
+    <footer class="container">
+        <div class="line"></div>
+
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="images/github logo.png" alt="" />
+                <p>© 2023 GitHub, Inc.</p>
+            </div>
+
+            <div class="footer__links">
+                <ul>
+                    <li>Terms</li>
+                    <li>Privacy</li>
+                    <li>Security</li>
+                    <li>Status</li>
+                    <li>Docs</li>
+                    <li>Contact GitHub</li>
+                    <li>Pricing</li>
+                    <li>API</li>
+                    <li>Training</li>
+                    <li>Blog</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
