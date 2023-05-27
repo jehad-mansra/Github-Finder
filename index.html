@@ -1,169 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GitHub Finder</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/utility.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="nav__pages">
-            <a href="#" class="header__logo">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <div>
-                <i class="fa-solid fa-magnifying-glass search__icon"></i>
-                <input type="search" class="header__search"  placeholder="Search or jump to..." /><a
-                    href="Comparison.html">
-                    <img src="images/svg.mr-1.png" class="Comparison__icon" /></a>
-            </div>
-            <nav class="nav">
-                <ul class="nav__link">
-                    <li>Pull requests</li>
-                    <li>Issues</li>
-                    <li>Codespaces</li>
-                    <li>Marketplace</li>
-                    <li>Explore</li>
-                </ul>
-            </nav>
-        </div>
-        <div class="nav__icons">
-            <i class="fa-regular fa-bell bell"></i>
-            <div class="plus__icon">
-                <i class="fa-solid fa-plus plus"></i>
-                <i class="fa-solid fa-caret-down arrow"></i>
-            </div>
-            <div class="photo__icon">
-                <img src="jehad.jpg" class="image__nav profile__image" />
-                <i class="fa-solid fa-caret-down arrow"></i>
-            </div>
-        </div>
-    </header>
-
-    <div class="header_responsive">
-        <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
-        <a href="#" class="header__logo">
-            <i class="fa-brands fa-github"></i>
+      <div class="nav__pages">
+        <!-- GitHub logo -->
+        <a href="Comparison.html" class="header__logo">
+          <i class="fa-brands fa-github"></i>
         </a>
+        <div class="original_search">
+          <div class="search_ele">
+            <!-- Search icon -->
+            <i class="fa-solid fa-magnifying-glass search__icon"></i>
+            <!-- Search input field -->
+            <input
+              type="search"
+              class="header__search"
+              placeholder="Search or jump to..."
+            />
+            <!-- Comparison link -->
+            <a href="Comparison.html" class="Comparison__link">
+              <img src="images/svg.mr-1.png" class="Comparison__icon"
+            /></a>
+          </div>
+        </div>
+        <nav class="nav">
+             <!-- Navigation links -->
+          <ul class="nav__link">
+            <a href="Comparison.html"><li>Comparison</li></a>
+            <li>Pull requests</li>
+            <li>Issues</li>
+            <li>Codespaces</li>
+            <li>Marketplace</li>
+            <li>Explore</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav__icons">
         <i class="fa-regular fa-bell bell"></i>
-
+        <div class="plus__icon">
+          <i class="fa-solid fa-plus plus"></i>
+          <i class="fa-solid fa-caret-down arrow"></i>
+        </div>
+        <div class="photo__icon">
+          <img src="jehad.jpg" class="image__nav profile__image" />
+          <i class="fa-solid fa-caret-down arrow"></i>
+        </div>
+      </div>
+    </header>
+         <!-- Responsive header -->
+    <div class="header_responsive">
+      <i class="fa-solid fa-bars fa-lg" style="color: #ffffff"></i>
+      <a href="#" class="header__logo">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <i class="fa-regular fa-bell bell"></i>
     </div>
     <section class="main__pages container">
-
-        <ul>
-            <li><img src="images/icon1.png" /> Overview</li>
-            <li><img src="images/icon2.png" /> Repositories <span class="Counter">6</span></li>
-            <li><img src="images/icon3.png" /> Projects</li>
-            <li><img src="images/icon4.png" /> Packages</li>
-            <li><img src="images/icon5.png" /> Stars</li>
-        </ul>
-
+      <div class="search__responsive">
+        <!-- Responsive search area -->
+      </div>
+      <ul>
+        <li><img src="images/icon1.png" /> Overview</li>
+        <li>
+          <img src="images/icon2.png" /> Repositories
+          <span class="Counter">6</span>
+        </li>
+        <li><img src="images/icon3.png" /> Projects</li>
+        <li><img src="images/icon4.png" /> Packages</li>
+        <li><img src="images/icon5.png" /> Stars</li>
+      </ul>
     </section>
     <div class="line"></div>
 
     <section class="main__section container">
-        <div class="main__image">
-            <img src="jehad.jpg" alt="" class="profile__image" />
-            <p class="user_name">jehad-mansra</p>
-            <button class="btn_profile">Edit profile</button>
-            <div class="follower">
-                <svg text="muted" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-people">
-                    <path d="M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z"></path>
-                </svg>
-                <p class="num_follower">45 follower</p>
-                <p class="num_following">10 following</p>
-            </div>
+      <div class="main__image">
+        <img src="jehad.jpg" alt="" class="profile__image" />
+        <p class="user_name">jehad-mansra</p>
+        <button class="btn_profile">Edit profile</button>
+        <div class="follower">
+          <svg
+            text="muted"
+            aria-hidden="true"
+            height="16"
+            viewBox="0 0 16 16"
+            version="1.1"
+            width="16"
+            data-view-component="true"
+            class="octicon octicon-people"
+          >
+            <path
+              d="M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z"
+            ></path>
+          </svg>
+          <p class="num_follower">45 follower</p>
+          <p class="num_following">10 following</p>
         </div>
+      </div>
 
-        <div class="main__Repositories">
-            <div class="p_repo">
-                <p>Popular repositories</p>
-                <p class="last_p">Customize your pins</p>
-            </div>
-            <div class="all-repos">
-                <div class="card__Repositories">
-                    <div class="title__repo">
-                        <p>portfolio-project</p>
-                        <button class="repo_button">Public</button>
-                    </div>
-                    <div class="lung_circle"><i class="fa-solid fa-circle "></i> Css</div>
-                </div>
-
-                <div class="card__Repositories">
-                    <div class="title__repo">
-                        <p>portfolio-project</p>
-                        <button class="repo_button">Public</button>
-                    </div>
-                    <div class="lung_circle"><i class="fa-solid fa-circle"></i> Css</div>
-                </div>
-                <div class="card__Repositories">
-                    <div class="title__repo">
-                        <p>portfolio-project</p>
-                        <button class="repo_button">Public</button>
-                    </div>
-                    <div class="lung_circle"><i class="fa-solid fa-circle"></i> Css</div>
-                </div>
-                <div class="card__Repositories">
-                    <div class="title__repo">
-                        <p>portfolio-project</p>
-                        <button class="repo_button">Public</button>
-                    </div>
-                    <div class="lung_circle"><i class="fa-solid fa-circle"></i> Css</div>
-                </div>
-                <div class="card__Repositories">
-                    <div class="title__repo">
-                        <p>portfolio-project</p>
-                        <button class="repo_button">Public</button>
-                    </div>
-                    <div class="lung_circle"><i class="fa-solid fa-circle"></i> Css</div>
-                </div>
-                <div class="card__Repositories">
-                    <div class="title__repo">
-                        <p>portfolio-project</p>
-                        <button class="repo_button">Public</button>
-                    </div>
-                    <div class="lung_circle"><i class="fa-solid fa-circle"></i> Css</div>
-                </div>
-            </div>
+      <div class="main__Repositories">
+        <div class="p_repo">
+          <p>Popular repositories</p>
+          <p class="last_p">Customize your pins</p>
         </div>
+        <div class="all-repos">
+          <div class="card__Repositories">
+            <div class="title__repo">
+              <p>portfolio-project</p>
+              <button class="repo_button">Public</button>
+            </div>
+            <div class="lung_circle">
+              <i class="fa-solid fa-circle"></i> Css
+            </div>
+          </div>
+          <!-- Repeat the above card__Repositories block for each repository -->
+
+          <div class="card__Repositories">
+            <div class="title__repo">
+              <p>portfolio-project</p>
+              <button class="repo_button">Public</button>
+            </div>
+            <div class="lung_circle">
+              <i class="fa-solid fa-circle"></i> Css
+            </div>
+          </div>
+          <div class="card__Repositories">
+            <div class="title__repo">
+              <p>portfolio-project</p>
+              <button class="repo_button">Public</button>
+            </div>
+            <div class="lung_circle">
+              <i class="fa-solid fa-circle"></i> Css
+            </div>
+          </div>
+          <div class="card__Repositories">
+            <div class="title__repo">
+              <p>portfolio-project</p>
+              <button class="repo_button">Public</button>
+            </div>
+            <div class="lung_circle">
+              <i class="fa-solid fa-circle"></i> Css
+            </div>
+          </div>
+          <div class="card__Repositories">
+            <div class="title__repo">
+              <p>portfolio-project</p>
+              <button class="repo_button">Public</button>
+            </div>
+            <div class="lung_circle">
+              <i class="fa-solid fa-circle"></i> Css
+            </div>
+          </div>
+          <div class="card__Repositories">
+            <div class="title__repo">
+              <p>portfolio-project</p>
+              <button class="repo_button">Public</button>
+            </div>
+            <div class="lung_circle">
+              <i class="fa-solid fa-circle"></i> Css
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="container">
-        <div class="line"></div>
+      <div class="line"></div>
 
-        <div class="footer__content">
-            <div class="footer__logo">
-                <img src="images/github logo.png" alt="" />
-                <p>© 2023 GitHub, Inc.</p>
-            </div>
-
-            <div class="footer__links">
-                <ul>
-                    <li>Terms</li>
-                    <li>Privacy</li>
-                    <li>Security</li>
-                    <li>Status</li>
-                    <li>Docs</li>
-                    <li>Contact GitHub</li>
-                    <li>Pricing</li>
-                    <li>API</li>
-                    <li>Training</li>
-                    <li>Blog</li>
-                    <li>About</li>
-                </ul>
-            </div>
+      <div class="footer__content">
+        <div class="footer__logo">
+          <img src="images/github logo.png" alt="" />
+          <p>© 2023 GitHub, Inc.</p>
         </div>
+
+        <div class="footer__links">
+          <ul>
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Security</li>
+            <li>Status</li>
+            <li>Docs</li>
+            <li>Contact GitHub</li>
+            <li>Pricing</li>
+            <li>API</li>
+            <li>Training</li>
+            <li>Blog</li>
+            <li>About</li>
+          </ul>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
-

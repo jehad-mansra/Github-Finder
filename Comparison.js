@@ -21,25 +21,23 @@ let result1 = document.querySelector(".result1");
 let result2 = document.querySelector(".result2");
 
 searchIcon.addEventListener("click", () => {
-  result1.innerHTML=""
-  result2.innerHTML=""
-  Comparison();
-
+  result1.innerHTML = "";
+  result2.innerHTML = "";
+  tie.innerHTML = "";
+  if ((user1search.value, user2search.value)) {
+    Comparison();
+  }
 });
 
 btnCompare.addEventListener("click", () => {
-  result1.innerHTML=""
-  result2.innerHTML=""
+  result1.innerHTML = "";
+  result2.innerHTML = "";
+  tie.innerHTML = "";
 
-  if (user1search.value , user2search.value) {
+  if ((user1search.value, user2search.value)) {
     Comparison();
   }
-  
-
 });
-
-
-
 
 function Comparison() {
   fetch(`https://api.github.com/users/${user1search.value}`)
