@@ -191,9 +191,11 @@ p.last_p {
   color: #1f2328;
   font-size: 1.4rem;
   display: flex;
-  gap: 10px;
+  gap: 7px;
   align-items: center;
 }
+
+
 
 .main__pages ul li img {
   gap: 10px;
@@ -379,6 +381,11 @@ footer {
   margin-top: 10px;
 }
 
+.card p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 .card img {
   width: 30rem;
   height: 30rem;
@@ -407,6 +414,7 @@ footer {
   margin-top: 15px;
   font-size: 1.5rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .header_responsive .bell {
