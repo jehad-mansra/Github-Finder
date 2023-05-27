@@ -131,6 +131,11 @@ a:active {
   border-radius: 50%;
 }
 
+.header_responsive{
+
+    display: none;
+}
+
 /* End Header styles */
 
 /* Main section styles */
@@ -286,6 +291,7 @@ p.last_p {
 
 .lung_circle i {
   color: #e34c26;
+  
 }
 
 .Counter {
@@ -465,7 +471,52 @@ footer {
     padding: 0 2.5rem;
     background-color: #24292f;
     color: #fff;
+    position: relative;
   }
+
+  .menu__icon{
+    cursor: pointer;
+  }
+
+  .sub-menu-wrap{
+    position:absolute;
+    top: 100%;
+    left: 3%;
+    width: 12rem;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  .sub-menu-wrap.open-menu{
+    max-height: 400px;
+  }
+
+  .sub-menu{
+    background-color: #1f2328;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .nav__link_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.3rem;
+   
+  }
+  
+.nav__link_menu a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav__link_menu li:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
 
   .header_responsive .bell {
     display: block;
@@ -609,3 +660,5 @@ footer {
     padding: 0px;
   }
 }
+
+

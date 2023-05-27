@@ -125,3 +125,10 @@ mediaQuery.addEventListener("change", handleMediaQuery);
 
 // Trigger the initial check
 handleMediaQuery(mediaQuery);
+
+let menuIcon = document.querySelector(".menu__icon");
+let subMenu = document.getElementById("subMenu");
+
+menuIcon.addEventListener("click", () => {
+  subMenu.classList.toggle("open-menu");
+});

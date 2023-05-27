@@ -85,3 +85,11 @@ function Comparison() {
         });
     });
 }
+
+let menuIcon = document.querySelector(".menu__icon");
+let subMenu = document.getElementById("subMenu");
+
+menuIcon.addEventListener("click", () => {
+  subMenu.classList.toggle("open-menu");
+});
+
